@@ -1,6 +1,13 @@
 {% extends "base.html" %}
 {% load static %}
+{% block extrastatic %}
+<link rel="stylesheet" href="{% static 'css/home/home.css' %}">
+{% endblock %}
 {% block content %}
-<h1>ようこそ{{ user.username }}さん！</h1>
-<a href="{% url 'accounts:logout' %}">ログアウト</a>
+<div class="whole">
+    {% include "_nav.html" %}
+    <div class="container">
+        <h1>ようこそ{{ user.username }}さん！</h1>
+    </div>
+</div>
 {% endblock %}

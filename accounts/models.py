@@ -5,3 +5,9 @@ from django.contrib.auth.models import AbstractUser
 
 class User(AbstractUser):
     email = models.EmailField("メールアドレス", unique=True)
+
+
+class Problem(models.Model):
+    english = models.CharField(max_length=100)
+    japanese = models.CharField(max_length=100)
+    degree = models.IntegerField()
