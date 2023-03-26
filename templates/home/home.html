@@ -8,6 +8,17 @@
     {% include "_nav.html" %}
     <div class="container">
         <h1>ようこそ{{ user.username }}さん！</h1>
+        <p class="home-p">最近作成した問題</p>
+        <div class="row list-of-problems">
+            {% for problem in problems %}
+            <div class="col-6 left-problem problem">
+                <p>{{ problem.japanese }}</p>
+            </div>
+            <div class="col-6 right-problem problem">
+                <p>{{ problem.english }}</p>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </div>
 {% endblock %}

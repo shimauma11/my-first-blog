@@ -1,0 +1,19 @@
+.problem{
+    height: 50px;
+    background-color: white;
+    line-height: 50px;
+}
+
+.left-problem{
+    border: gray solid 1px;
+}
+
+.right-problem{
+    border: gray solid 1px;
+    border-left: none;
+}
+
+.home-p{
+    color: white;
+    margin-top: 100px;
+}
