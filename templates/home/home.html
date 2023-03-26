@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<h1>ようこそ{{ user.username }}さん！</h1>
+<a href="{% url 'accounts:logout' %}">ログアウト</a>
+{% endblock %}
